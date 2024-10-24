@@ -86,11 +86,11 @@ export const updateProducts = async (req, res) => {
 };
 
 export const deleteProducts = async (req, res) => {
-  const { id } = req.body;
+  const { id } = req.params;
   try {
     const data = await prisma.product.delete({
       where: {
-        id,
+        id: Number(id),
       },
     });
     return res.status(200).json({

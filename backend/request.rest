@@ -8,16 +8,16 @@ GET http://localhost:5000/api/products/1
 ###
 # Create Product
 POST http://localhost:5000/api/products
-Content-Type: application/json
+ Content-Type: application/json
 
 {
-    "name" : "Pisang Bakar",
+    "name" : "Telor Simatupang",
     "price" : 2000
 }
 
 ###
 # Update Product
-PUT http://localhost:5000/api/products/1
+PUT http://localhost:5000/api/products/18
 Content-Type: application/json
 
 {
@@ -27,4 +27,4 @@ Content-Type: application/json
 
 ###
 # Delete product BY ID
-delete http://localhost:5000/api/products/1
+delete http://localhost:5000/api/products/16
